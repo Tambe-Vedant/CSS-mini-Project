@@ -1,1 +1,1 @@
-# Spotify-Clone
+# CSS-mini-Project
