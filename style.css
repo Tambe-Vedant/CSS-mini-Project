@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_box{
+    width: 100vw;
+    height: 100vh;
+    background: url("photo.jpg");
+    background-size: cover;
+}
+.btn_one i {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    left: 1%;
+    line-height:10vh;
+   
+}
+.sidebar_menu{
+    position: fixed;
+    height: 100vh;
+    width: 30%;
+    top:0;
+    left:-100%;
+    background-color:rgb(255, 255, 255 ,0.1);
+    box-shadow: 0 0 6px rgb(255, 255, 255 ,0.5);
+
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+  
+    box-shadow: 0 2px 4px rgb(255, 255, 255 ,0.5);
+}
+.logo a{
+    line-height: 10vh;
+    font-size: 150%;
+    font-weight: 500;
+    padding-left: 20%;
+    color: white;
+    text-decoration: none;
+}
+.sidebar_menu .btn_two i{
+    line-height: 6vh;
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    font-size:1rem;
+    /* opacity: 0; */
+}
+
+.sidebar_menu .menu {
+   position: absolute;
+   width: 100%;
+   top: 10%;
+
+}
+.sidebar_menu .menu li{
+    margin: 3%;
+    padding: 3% 5%;
+    list-style: none;
+}
+.sidebar_menu .menu i,a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.sidebar_menu .menu i{
+    padding-right: 3%;
+}
+.sidebar_menu .social_media{
+    position: absolute;
+    left: 20%;
+    bottom: 5%;
+}
+.sidebar_menu .social_media i{
+    color: rgb(255, 255, 255,0.5);
+    padding:0 0.5rem;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 25px rgb(255, 255, 255 ,0.2),0 0 50px rgb(255, 255, 255 ,0.2),0 0 75px rgb(255, 255, 255 ,0.2),0 0 100px rgb(255, 255, 255 ,0.2);
+}
+.sidebar_menu .social_media i:hover{
+    color: white;
+    font-size: 25px;
+   
+}
+.btn_one i:hover{
+    font-size: 40px;
+}
+.sidebar_menu .btn_two i:hover{
+    font-size: 25px;
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+
+}
+#check:checked ~.btn_one{
+    opacity: 0;
+}
+@media(max-width:1060px){
+    .main_box{
+        width: 100vw;
+        height: 100vh;
+        background: url("photo.jpg");
+        background-size: 100vw 100vh;
+    }
+    .btn_one i {
+        position: absolute;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+        left: 1%;
+        line-height:8vh;
+       
+    }
+    .logo a{
+    line-height: 6vh;
+    font-size: 100%;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-left: 10%;
+    }
+    .sidebar_menu .btn_two i{
+        line-height: 4vh;
+        position: absolute;
+        left: 90%;
+        top: 1%;
+        font-size:0.8rem;
+        
+}
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 8%;
+ 
+ }
+ .sidebar_menu .menu li{
+     margin: 2%;
+     padding: 3% 4%;
+     list-style: none;
+ }
+ .sidebar_menu .menu i,a{
+     color: white;
+     font-size: 0.9rem;
+     /* font-weight: 200; */
+     text-decoration: none;
+ }
+ .sidebar_menu .menu i{
+     padding-right: 2%;
+ }
+ .sidebar_menu .social_media{
+     position: absolute;
+     left: 13%;
+     bottom: 5%;
+ }
+ .sidebar_menu .social_media i{
+     color: rgb(255, 255, 255,0.5);
+     padding:0 0.3rem;
+ }
+}
+@media(max-width:300px){
+    .main_box{
+        width: 100vw;
+        height: 100vh;
+        background: url("photo.jpg");
+        background-size: 100vw 100vh;
+    }
+    .btn_one i {
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 700;
+        color: white;
+        left: 1%;
+        line-height:6vh;
+       
+    }
+    .logo a{
+    line-height: 5vh;
+    font-size: 80%;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-left: 10%;
+    }
+    .sidebar_menu .btn_two i{
+        line-height: 3vh;
+        position: absolute;
+        left: 90%;
+        top: 1%;
+        font-size:0.8rem;
+        
+}
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 8%;
+ 
+ }
+ .sidebar_menu .menu li{
+     margin: 2%;
+     padding: 3% 4%;
+     list-style: none;
+ }
+ .sidebar_menu .menu i,a{
+     color: white;
+     font-size: 0.7rem;
+     /* font-weight: 200; */
+     text-decoration: none;
+ }
+ .sidebar_menu .menu i{
+     padding-right: 2%;
+ }
+ .sidebar_menu .social_media{
+     position: absolute;
+     left: 13%;
+     bottom: 5%;
+ }
+ .sidebar_menu .social_media i{
+     color: rgb(255, 255, 255,0.5);
+     padding:0 0.2rem;
+ }
+}
